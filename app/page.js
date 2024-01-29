@@ -17,7 +17,7 @@ export default function Home() {
   const data = getData();
 
   return (
-    <Layout home>
+    <>
       <Head>
         <title>{siteTitle}</title>
       </Head>
@@ -36,6 +36,6 @@ export default function Home() {
           ))} */}
         </ul>
       </section>
-    </Layout>
+    </>
   );
 }
