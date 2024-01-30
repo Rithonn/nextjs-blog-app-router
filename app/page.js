@@ -1,12 +1,11 @@
 import Image from "next/image";
 import utilStyles from '../styles/utils.module.css';
-
-
+import Link from "next/link";
 
 export default function Home() {
 
   return (
-    <>
+    <div className={utilStyles.container}>
       <Image src="/images/papa.png"
         className={utilStyles.borderCircle}
         height={144}
@@ -17,6 +16,10 @@ export default function Home() {
         <ul className={utilStyles.list}>
         </ul>
       </section>
-    </>
+
+      <footer>
+        <Link href="/dashboard">Go To Dashboard</Link>
+      </footer>
+    </div>
   );
 }
